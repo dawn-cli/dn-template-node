@@ -1,0 +1,19 @@
+init:
+  - name: tnpm-install
+
+test:
+  - name: lint
+  - name: mocha
+
+dev:
+  - name: shell
+    options:
+      - node ./lib/index.js
+
+build:
+  - name: shell
+  - options:
+    - node ./lib/index.js
+
+publish:
+  - name: tnpm-publish

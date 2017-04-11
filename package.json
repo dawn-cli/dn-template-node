@@ -2,7 +2,7 @@
   "name": "dbl-template-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "dn test"
   },
