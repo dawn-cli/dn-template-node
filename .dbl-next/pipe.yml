@@ -1,19 +1,19 @@
 init:
-  - name: tnpm-install
-
-test:
-  - name: lint
-  - name: mocha
+  - name: shell
+    script:
+      - tnpm i
 
 dev:
   - name: shell
-    options:
+    script:
       - node ./lib/index.js
 
 build:
   - name: shell
-  - options:
-    - node ./lib/index.js
+    script:
+      - node ./lib/index.js
 
 publish:
-  - name: tnpm-publish
+  - name: shell
+    script:
+      - tnpm pu @ali/${name}
