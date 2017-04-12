@@ -1,5 +1,8 @@
 init:
   - name: tnpm-install
+  - name: shell
+    script:
+      - echo hello
 
 dev:
   - name: shell
