@@ -1,8 +1,5 @@
 init:
   - name: tnpm-install
-  - name: shell
-    script:
-      - echo hello
 
 dev:
   - name: shell
@@ -12,7 +9,10 @@ dev:
 build:
   - name: shell
     script:
-      - node ./lib/index.js
+      - dn dev
+
+test:
+  - name: lint
 
 publish:
   - name: shell
