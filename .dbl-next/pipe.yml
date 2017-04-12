@@ -1,7 +1,5 @@
 init:
-  - name: shell
-    script:
-      - tnpm i
+  - name: tnpm-install
 
 dev:
   - name: shell
