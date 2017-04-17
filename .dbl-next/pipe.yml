@@ -18,4 +18,4 @@ test:
 publish:
   - name: shell
     script:
-      - tnpm pu @ali/${name}
+      - tnpm pu ${name}
