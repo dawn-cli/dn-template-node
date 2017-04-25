@@ -1,10 +1,10 @@
 {
   "name": "dbl-template-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "dn test"
+    "test": "dn $ clean && dn test && dn build -e prod"
   },
   "author": "",
   "license": "ISC"
