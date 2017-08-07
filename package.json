@@ -1,5 +1,5 @@
 {
-  "name": "dbl-template-node",
+  "name": "@ali/dn-template-node",
   "version": "1.0.4",
   "description": "",
   "main": "./lib/index.js",
