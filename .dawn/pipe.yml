@@ -19,4 +19,4 @@ test:
 publish:
   - name: shell
     script:
-      - tnpm pu ${name}
+      - tnpm pu

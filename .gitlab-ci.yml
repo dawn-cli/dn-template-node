@@ -6,11 +6,13 @@ before_script:
   - chmod +x $BIN_DIR/tnpm && ls -al $BIN_DIR
   - export PATH=$PWD/node_modules/.bin:$BIN_DIR:$PATH
   - echo $PATH
-node-7:
+
+test:
   image: reg.docker.alibaba-inc.com/dockerlab/node-ci:1.0.0
   script:
-    - time tnpm i --install-node=7 --no-cache
-    - time tnpm i @ali/dbl-next 
-    - time npm test
+    - time tnpm i --install-node=8 --no-cache
+    - time tnpm i @ali/dawn 
+    - time tnpm i 
+    - time dn test && dn build -e prod
   tags:
     - swarm
