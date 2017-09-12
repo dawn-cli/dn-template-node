@@ -1,11 +1,11 @@
 {
-  "name": "@ali/dn-template-node",
-  "version": "1.0.7",
-  "description": "",
+  "name": "dn-template-node",
+  "version": "1.1.0",
+  "description": "Blank node project template",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "dn $ clean && dn test && dn build -e prod"
+    "test": "dn test && dn build -e prod"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
